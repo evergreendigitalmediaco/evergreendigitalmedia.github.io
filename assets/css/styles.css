@@ -23,6 +23,8 @@ body {
   background: radial-gradient(1000px 600px at 15% -10%, rgba(215,227,255,0.10), transparent 55%),
               radial-gradient(900px 600px at 90% 0%, rgba(215,227,255,0.06), transparent 55%),
               linear-gradient(180deg, var(--bg), var(--bg2));
+  background-attachment: fixed;  /* Keeps the glows stationary at the top of the screen */
+  background-repeat: no-repeat; /* Good practice, prevents horizontal/vertical tiling */
   color: var(--text);
   line-height: 1.5;
 }
@@ -174,7 +176,7 @@ a:hover { text-decoration: underline; }
   padding: 40px 0;
 }
 .section-alt {
-  background: rgba(255,255,255,0.02);
+  background: transparent;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
