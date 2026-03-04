@@ -284,8 +284,8 @@ input:focus, textarea:focus {
   margin-top: 25px;
 }
 .channel-card img {
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
   object-fit: cover;
   margin-bottom: 14px;
   border-radius: 50%;
