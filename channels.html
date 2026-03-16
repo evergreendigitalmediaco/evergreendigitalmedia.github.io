@@ -95,7 +95,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>Copyright 2026 Evergreen Digital Media. All rights reserved.</p>
+      <p>Copyright <span id="year">2026</span> Evergreen Digital Media. All rights reserved.</p>
       <p class="micro">
         <a href="channels.html">Channels</a>
         <span class="sep">|</span>
@@ -105,5 +105,9 @@
       </p>
     </div>
   </footer>
+
+  <script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
